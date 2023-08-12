@@ -362,18 +362,79 @@
         <a href="tel:+1212-772-4150" class="adress">+1 212-772-4150</a>
       </address>
     </ul>
+    <div class="the-form">
+    <form class="subscribe-section">
+      <label class="subscribe-title" for="subscribe-email">
+        <p>Subscribe to the newsletter</p>
+      </label>
+      <input type="email" placeholder="E-mail" />
+      <button>
+        Subscribe
+        <svg class="subscribe-icon">
+          <use href="./icons/symbol-defs.svg#icon-subscribe"></use>
+        </svg>
+      </button>
+    </form> 
+    </div>
     </footer>
     <!--Modal-->
-    <div class="modal is-hidden"data-modal>
+    <div class="modal is-hidden" data-modal>
       <div class="modal-content">
-        <button class="close-btn" data-modal-close>&times;</button>
-        Continutul modalului
+        <div class="modal-content-title">
+          Leave your information and we'll call you back
+        </div>
+        <form class="form-group">
+          <label for="name" class="form">
+            <svg class="modal-form-icons">
+              <use href="./icons/symbol-defs.svg#icon-personIcon"></use>
+            </svg>
+            <span>Name</span>
+            <input type="text" name="name" id="name" />
+          </label>
+
+          <label for="phone" class="form">
+            <svg class="modal-form-icons">
+              <use href="./icons/symbol-defs.svg#icon-phoneIcon"></use>
+            </svg>
+            <span>Telephone</span>
+            <input type="tel" name="phone" id="phone" />
+          </label>
+
+          <label for="email" class="form">
+            <svg class="modal-form-icons">
+              <use href="./icons/symbol-defs.svg#icon-black-mail  "></use>
+            </svg>
+            <span>E-mail</span>
+            <input type="email" name="email" id="email" />
+          </label>
+
+          <label for="comments" class="form comment-form">
+            <span>Comments</span>
+            <textarea
+              name="comments"
+              id="comments"
+              placeholder="Enter the text"
+            ></textarea>
+          </label>
+          <label class="terms-and-conditions-section">
+            <input type="checkbox" class="check-mark" checked="checked" />
+            <svg class="checked-icon">
+              <use href="./icons/symbol-defs.svg#icon-checkbox"></use>
+            </svg>
+            <svg class="checked-icon accept-icon">
+              <use href="./icons/symbol-defs.svg#icon-checkboxChecked"></use>
+            </svg>
+            <span>
+              I agree with the letter and accept the
+              <span class="terms-and-conditions">Terms and Conditions</span>
+            </span>
+          </label>
+          <button type="submit" class="modal-send-btn">Send</button>
+        </form>
+
+        <button class="close-button" data-modal-close>&times;</button>
       </div>
     </div>
-
-    <script>
-      feather.replace()
-    </script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
