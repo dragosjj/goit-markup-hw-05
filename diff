@@ -1,0 +1,214 @@
+<!-- Menu for mobile -->
+<div class="js-menu-container">
+    <button class="js-close-menu">&times;</button>
+    <nav class="menu-drawer-navigation">
+      <ul class="header-pages">
+        <li class="header-link">
+          <a href="index.html">Studio</a>
+        </li>
+        <li class="header-link">
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="header-link">
+          <a href="contacts.html">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="contact-details">
+      <ul class="header-contacts">
+        <li class="mail-header-group">
+        <a 
+        href="mailto:info@devstudio.com"
+        class="header-icon header-contacts-mail"
+        ><span 
+        href="mailto:info@devstudio.com"
+        class="header-icon header-contacts-mail"
+        aria-label="Mail">
+        </span>
+        info@devstudio.com</a>
+        </li>
+      <li class="phone-header-group">
+      <a href="tel:+1212-772-4150" class="header-contacts-phone"
+        ><span
+        href="tel:+1 212-772-4150"
+        class="header-icon header-contacts-phone"
+        aria-label="Phone-number"
+        ><span>
+      +1 212-772-4150</a>
+      </div>
+    </div>
+
+    <ul class="social-titles">
+      <li>Instagram</li>
+      <span class="break-line"></span>
+      <li>Twitter</li>
+      <span class="break-line"></span>
+      <li>Facebook</li>
+      <span class="break-line"></span>
+      <li>LinkedIn</li>
+    </ul>
+  </div>
+
+
+
+   <!--Header part of the page -->
+    <header class="header">
+      <button class="menu-section js-open-menu">
+        <svg>
+          <use href="./icons/symbol-defs.svg#icon-menuButton"></use>
+        </svg>
+      </button>
+        <div class="global-aside">
+          <a class="header-logo"href="./index.html"><span class=header-half-logo>Web</span>Studio</a>
+        </div> 
+    <div clas="global-header-container">
+    <nav class="menu-drawer-navigation">
+        <ul class="header-pages">
+          <li><a href="./index.html" class="header-link active">Studio</a></li>
+          <li><a href="./portfolio.html" class="header-link">Portfolio</a></li>
+          <li><a href="Contacts.html" class="header-link">Contacts</a></li>
+        </ul>
+        <div class="contact-details">
+        <ul class="header-contacts">
+          <li class="mail-header-group">
+          <a 
+          href="mailto:info@devstudio.com"
+          class="header-icon header-contacts-mail"
+          ><span 
+          href="mailto:info@devstudio.com"
+          class="header-icon header-contacts-mail"
+          aria-label="Mail">
+          <svg class="mail">
+          <use href="./icons/symbol-defs.svg#icon-envelope"></use>
+          </svg> </span>
+          info@devstudio.com</a>
+          </li>
+        <li class="phone-header-group">
+        <a href="tel:+1212-772-4150" class="header-contacts-phone"
+          ><span
+          href="tel:+1 212-772-4150"
+          class="header-icon header-contacts-phone"
+          aria-label="Phone-number"
+          ><svg class="phone">
+            <use href="./icons/symbol-defs.svg#icon-telephone"></use>
+            </svg><span>
+        +1 212-772-4150</a>
+      </li>
+      </ul>
+    </div>
+      </nav>
+    </div>
+    </header> 
+
+
+
+    /*JS menu for mobile */
+
+.js-menu-container.is-open {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 1;
+}
+
+.js-menu-container .menu-drawer-navigation {
+  margin-top: 48px;
+  margin-left: 40px;
+  margin-bottom: 306px;
+}
+
+.js-menu-container .menu-drawer-navigation li a {
+  color: #212121;
+  font-family: var(--text-font-family);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+
+.js-menu-container .menu-drawer-navigation .header-pages {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.js-menu-container .menu-drawer-navigation li a:hover,
+.js-menu-container .menu-drawer-navigation li a:focus {
+  color: #2196f3;
+  transition: var(--transition-value);
+}
+
+.js-close-menu {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  background-color: #fff;
+  color: #212121;
+  border: none;
+  font-size: 44px;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  z-index: 1;
+}
+
+.js-close-menu:hover,
+.js-close-menu:focus {
+  color: #2196f3;
+  cursor: pointer;
+  transition: var(--transition-value);
+}
+
+.js-menu-container .contact-details {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.js-menu-container .contact-details .phone-number a {
+  color: #2196f3;
+  font-family: var(--text-font-family);
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: 0.68px;
+}
+
+.js-menu-container .mail-address a {
+  color: #757575;
+  font-family: var(--text-font-family);
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.48px;
+}
+
+.js-menu-container .mail-address a:hover,
+.js-menu-container .mail-address a:focus {
+  color: #2196f3;
+}
+
+.js-menu-container .social-titles {
+  display: flex;
+  gap: 10px;
+  margin-left: 40px;
+  margin-bottom: 48px;
+  color: #2196f3;
+  font-family: var(--text-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.36px;
+}
+
+.js-menu-container .social-titles .break-line {
+  width: 1px;
+  height: 22px;
+  background: rgba(33, 33, 33, 0.2);
+}
+
